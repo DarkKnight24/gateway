@@ -1,0 +1,20 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: GateWayServer
+  cloud:
+    config:
+      uri: http://localhost:9999
+zuul:
+  routes:
+    MovieDataServer:
+      path: /movie/**
+      strip-prefix: false
+    OrderServer:
+      path: /order/**
+      strip-prefix: false
+    UserServer:
+      path: /user/**
+      strip-prefix: false
+  prefix: /api
