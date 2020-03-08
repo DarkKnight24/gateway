@@ -7,6 +7,8 @@ spring:
     config:
       uri: http://localhost:9999
 zuul:
+  sensitive-headers: Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Credentials,Access-Control-Allow-Origin,Vary,X-Frame-Options,token
   routes:
     MovieDataServer:
       path: /movie/**
@@ -14,7 +16,7 @@ zuul:
     OrderServer:
       path: /order/**
       strip-prefix: false
-    UserServer:
+    UserBaseServer:
       path: /user/**
       strip-prefix: false
   prefix: /api
