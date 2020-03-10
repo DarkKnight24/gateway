@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM java-netcat
 VOLUME /tmp
 EXPOSE 8084
 # (前面一个是打包的jar的名字，后面一个是在容器中使用的名字，这个要和最后的-jar 后面的jar包的名字一致)
