@@ -5,7 +5,7 @@ spring:
     name: GateWayServer
   cloud:
     config:
-      uri: http://localhost:9999
+      uri: http://localhost:9999/config
 zuul:
   sensitive-headers: Access-Control-Allow-Origin
   ignored-headers: Access-Control-Allow-Credentials,Access-Control-Allow-Origin,Vary,X-Frame-Options,token
