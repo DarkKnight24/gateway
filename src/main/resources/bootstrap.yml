@@ -20,3 +20,8 @@ zuul:
       path: /user/**
       strip-prefix: false
   prefix: /api
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
