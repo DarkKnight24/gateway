@@ -14,11 +14,11 @@ zuul:
       path: /movie/**
       strip-prefix: false
     FileServer:
-      path: /file/*
+      path: /file/**
       strip-prefix: false
       service-id: MovieDataServer
     AreaServer:
-      path: /area/*
+      path: /area/**
       strip-prefix: false
       service-id: MovieDataServer
     OrderServer:
