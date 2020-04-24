@@ -28,7 +28,7 @@ zuul:
       path: /user/**
       strip-prefix: false
     MovieService:
-      path: /movie/**
+      path: /movie/v2/api-docs
       service-id: MovieDataServer
   prefix: /api
 ribbon:
