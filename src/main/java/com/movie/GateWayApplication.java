@@ -31,7 +31,8 @@ public class GateWayApplication {
         @Override
         public List<SwaggerResource> get() {
             List<SwaggerResource> swaggerResourceList = new ArrayList<>();
-            swaggerResourceList.add(createSwaggerResource("MovieService", "/api/v2/api-docs ", "1.0"));
+            swaggerResourceList.add(createSwaggerResource("MovieService", "/api/movie-doc/v2/api-docs ", "1.0"));
+            swaggerResourceList.add(createSwaggerResource("OrderService", "/api/order-doc/v2/api-docs ", "1.0"));
             return swaggerResourceList;
         }
         
