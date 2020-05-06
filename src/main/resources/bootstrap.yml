@@ -27,10 +27,10 @@ zuul:
     UserBaseServer:
       path: /user/**
       strip-prefix: false
-    MovieService:
+    MovieDocService:
       path: /movie-doc/**
       service-id: MovieDataServer
-    OrderService:
+    OrderDocService:
       path: /order-doc/**
       service-id: OrderBaseServer
   prefix: /api
