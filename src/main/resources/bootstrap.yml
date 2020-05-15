@@ -33,6 +33,9 @@ zuul:
     OrderDocService:
       path: /order-doc/**
       service-id: OrderBaseServer
+    UserDocService:
+      path: /user-doc/**
+      service-id: UserBaseServer
   prefix: /api
 ribbon:
   ReadTimeout: 10000
