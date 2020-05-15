@@ -33,6 +33,7 @@ public class GateWayApplication {
             List<SwaggerResource> swaggerResourceList = new ArrayList<>();
             swaggerResourceList.add(createSwaggerResource("MovieDoc", "/api/movie-doc/v2/api-docs ", "1.0"));
             swaggerResourceList.add(createSwaggerResource("OrderDoc", "/api/order-doc/v2/api-docs ", "1.0"));
+            swaggerResourceList.add(createSwaggerResource("OrderDoc", "/api/user-doc/v2/api-docs ", "1.0"));
             return swaggerResourceList;
         }
         
